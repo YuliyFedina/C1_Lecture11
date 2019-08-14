@@ -11,16 +11,5 @@ namespace Ex1
                 Console.WriteLine(item);
             }
         }
-
-        public static string MasThroughSeparator(this int[] mas, string separator)
-        {
-            var result="";
-            foreach (var item in mas)
-            {
-                result += ($"{item}{separator}");
-            }
-
-            return result;
-        }
     }
 }
