@@ -4,9 +4,17 @@ namespace Ex1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            //Написать метод-расширение для массива целых чисел, который выводит этот массив на консоль.
+            var array = new int[10];
+            var rnd = new Random();
+            for (var i = 0; i < array.Length; i++)
+            {
+                array[i] = rnd.Next(100);
+            }
+
+            array.OutputMas();
         }
     }
 }
